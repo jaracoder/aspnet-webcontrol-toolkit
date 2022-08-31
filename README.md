@@ -1,7 +1,7 @@
 # ASP.NET WebControl Toolkit
-Es una librería desarrollada en Visual Basic .NET con un conjunto de controles personalizados gratuitos y de código abierto para aplicaciones web compatibles con .NET Framework 4.8.
+Es una librería desarrollada en `Visual Basic .NET` con un conjunto de controles personalizados gratuitos y de código abierto para aplicaciones web compatibles con .NET Framework 4.8.
 
-Actualmente se han desarrollado los siguientes controles:
+Actualmente dispone de los siguientes controles:
 
 - `CompositeDataBound`
 - `Grid`
@@ -11,7 +11,7 @@ Actualmente se han desarrollado los siguientes controles:
 - `QuickContacts`
 
 
-## Configuración inicial 🚀
+## Configuración inicial
 
 Descargar la última versión disponible de la librería y añadir la referencia en el proyecto.
 
@@ -29,10 +29,10 @@ Para utilizar a nivel de aplicación `web.config`:
 </pages>
 ```
 
-## Referencias 🌐
+## Referencias
 Documentación oficial de [Microsoft (MSDN)]([https://github.com/jaracoder](https://docs.microsoft.com/en-us/previous-versions/aspnet/9txe1d4x(v=vs.100)?redirectedfrom=MSDN)) como base de desarrollo.
 
-## Licencia 📄
+## Licencia
 
 Este proyecto está bajo la licencia de [GNU General Public License v3.0](https://github.com/jaracoder/ASP.NET.WebControl.Toolkit/blob/main/LICENSE.MD).
 
