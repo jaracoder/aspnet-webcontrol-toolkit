@@ -16,12 +16,12 @@ Actualmente se han desarrollado los siguientes controles:
 Descargar la última versión disponible de la librería, añadir la referencia en el proyecto de Visual Studio y añadir la siguientes etiquetas:
 
 _Para utilizar la librería solo a nivel de página (.aspx):_
-```
+```CSHARP
 <%@ Register TagPrefix="wc" Namespace="Jara.WebControl.Toolkit" Assembly="WebControlToolkit" %>
 ```
 
 _Para utilizar la librería a nivel de aplicación (web.config):_
-```
+```XML
 <pages>
     <controls>
         <add tagPrefix="wc" namespace="Jara.WebControl.Toolkit" assembly="WebControlToolkit" />
