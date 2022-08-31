@@ -3,24 +3,24 @@ Es una librería desarrollada en Visual Basic .NET con un conjunto de controles 
 
 Actualmente se han desarrollado los siguientes controles:
 
-- CompositeDataBound
-- Grid
-- Register
-- SimpleDataBound
-- TextBoxData
-- QuickContacts
+- `CompositeDataBound`
+- `Grid`
+- `Register`
+- `SimpleDataBound`
+- `TextBoxData`
+- `QuickContacts`
 
 
 ## Configuración inicial 🚀
 
-Descargar la última versión disponible de la librería, añadir la referencia en el proyecto de Visual Studio y añadir la siguientes etiquetas:
+Descargar la última versión disponible de la librería y añadir la referencia en el proyecto.
 
-_Para utilizar la librería solo a nivel de página (.aspx):_
+Para utilizar solo a nivel de página `.aspx`:
 ```CSHARP
 <%@ Register TagPrefix="wc" Namespace="Jara.WebControl.Toolkit" Assembly="WebControlToolkit" %>
 ```
 
-_Para utilizar la librería a nivel de aplicación (web.config):_
+Para utilizar a nivel de aplicación `web.config`:
 ```XML
 <pages>
     <controls>
