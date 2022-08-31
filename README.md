@@ -1,4 +1,6 @@
 # ASP.NET WebControl Toolkit
+[![Licencia: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+      
 Es una librería desarrollada en `Visual Basic .NET` con un conjunto de controles personalizados gratuitos y de código abierto para aplicaciones web compatibles con .NET Framework 4.8.
 
 Actualmente dispone de los siguientes controles:
