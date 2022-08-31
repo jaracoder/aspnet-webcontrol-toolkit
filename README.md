@@ -30,11 +30,11 @@ _Para utilizar la librería a nivel de aplicación (web.config):_
 ```
 
 ## Referencias 🌐
-Documentación oficial de [Microsoft (MSDN)]([https://github.com/jaracoder](https://docs.microsoft.com/en-us/previous-versions/aspnet/9txe1d4x(v=vs.100)?redirectedfrom=MSDN)) como base de conocimiento para desarrollar los controles de la librería.
+Documentación oficial de [Microsoft (MSDN)]([https://github.com/jaracoder](https://docs.microsoft.com/en-us/previous-versions/aspnet/9txe1d4x(v=vs.100)?redirectedfrom=MSDN)) como base de desarrollo.
 
 ## Licencia 📄
 
-Este proyecto está bajo la licencia de GNU General Public License v3.0. Puedes conocer más detalles en el archivo [LICENSE.md](LICENSE.md).
+Este proyecto está bajo la licencia de [GNU General Public License v3.0](https://github.com/jaracoder/ASP.NET.WebControl.Toolkit/blob/main/LICENSE.MD).
 
 ---
 _escrito con ❤️ por [jaracoder](https://github.com/jaracoder)._
