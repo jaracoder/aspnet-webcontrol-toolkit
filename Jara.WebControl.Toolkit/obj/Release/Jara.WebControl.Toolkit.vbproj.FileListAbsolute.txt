@@ -1,0 +1,10 @@
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\bin\Release\WebControlToolkit.dll
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\bin\Release\WebControlToolkit.pdb
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\bin\Release\WebControlToolkit.xml
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\obj\Release\Jara.WebControl.Toolkit.vbproj.AssemblyReference.cache
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\obj\Release\Jara.WebControl.Toolkit.Resources.resources
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\obj\Release\Jara.WebControl.Toolkit.vbproj.GenerateResource.cache
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\obj\Release\Jara.WebControl.Toolkit.vbproj.CoreCompileInputs.cache
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\obj\Release\WebControlToolkit.dll
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\obj\Release\WebControlToolkit.xml
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.WebControl.Toolkit\obj\Release\WebControlToolkit.pdb

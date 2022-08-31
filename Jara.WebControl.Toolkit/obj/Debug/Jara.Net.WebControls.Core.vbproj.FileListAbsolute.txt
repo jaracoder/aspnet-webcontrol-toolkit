@@ -1,0 +1,10 @@
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\bin\Debug\Jara.Net.WebControls.dll
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\bin\Debug\Jara.Net.WebControls.pdb
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\bin\Debug\Jara.Net.WebControls.xml
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\obj\Debug\Jara.Net.WebControls.Core.vbproj.AssemblyReference.cache
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\obj\Debug\Jara.Net.WebControls.Resources.resources
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\obj\Debug\Jara.Net.WebControls.Core.vbproj.GenerateResource.cache
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\obj\Debug\Jara.Net.WebControls.Core.vbproj.CoreCompileInputs.cache
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\obj\Debug\Jara.Net.WebControls.dll
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\obj\Debug\Jara.Net.WebControls.xml
+C:\git\Jara.Net.WebControls\Jara.Net.WebControls\Jara.Net.WebControls.Core\obj\Debug\Jara.Net.WebControls.pdb

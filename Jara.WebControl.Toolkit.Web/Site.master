@@ -1,0 +1,83 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%=Page.Title %> - ASP.NET WebControl Toolkit</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form runat="server">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <h1>
+                        <a href="Home.aspx">ASP.NET WebControl Toolkit</a></h1>
+                </div>
+                <div class="clear hideSkiplink">
+                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Inicio" />
+                            <asp:MenuItem Text="Documentación">
+                                <asp:MenuItem NavigateUrl="~/CompositeDataBoundColumn.aspx" Text="CompositeDataBoundColumn" />
+                                <asp:MenuItem NavigateUrl="~/Grid.aspx" Text="Grid" />
+                               <%-- <asp:MenuItem NavigateUrl="~/HierarchicalDataBoundControl.aspx" Text="HierarchicalDataBoundControl" />--%>
+                                <asp:MenuItem NavigateUrl="~/Register.aspx" Text="Register" />
+                                <asp:MenuItem NavigateUrl="~/SimpleDataBoundColumn.aspx" Text="SimpleDataBoundColumn" />
+                                <asp:MenuItem NavigateUrl="~/TextBoxData.aspx" Text="TextBoxData" />
+                                <asp:MenuItem NavigateUrl="~/QuickContacts.aspx" Text="QuickContacts" />
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="//jaracoder.com/contacto" Text="Contacto" />
+                            <asp:MenuItem NavigateUrl="//www.linkedin.com/in/jaracoder/" Text="Acerca de" />
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear">
+            </div>
+            <div class="footer">
+                <span>&copy;&nbsp;Copyright 2016 - <%=DateTime.Now.Year %>.
+                <a target="_blank" href="//jaracoder.com">Jaracoder</a>
+                </span>
+                <div class="footer-more-links">
+                    <a href="Changes.aspx" title="Ver el registro de cambios.">Historial de versiones
+                    </a>
+                    <span style="float: right; margin: 0 5px;">|</span>
+                    <a target="_blank" href="//github.com/jaracoder" title="Repositorio en GitHub.">GitHub
+                    </a>
+                    <span style="float: right; margin: 0 5px;">|</span>
+                    <a target="_blank" href="//www.linkedin.com/in/jaracoder/" title="Acerca de.">Acerca de
+                    </a>
+                    <span style="float: right; margin: 0 5px;">|</span>
+                    <a target="_blank" href="//jaracoder.com/contacto" title="Contacto.">Contacto
+                    </a>
+                    <span style="float: right; margin: 0 5px;">|</span>
+                    <a href="Home.aspx" title="Ir al inicio.">Inicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--basic scripts-->
+    <!--[if !IE]>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
+</body>
+</html>

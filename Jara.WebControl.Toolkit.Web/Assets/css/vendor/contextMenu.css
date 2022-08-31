@@ -1,0 +1,76 @@
+﻿  .yellow
+        {
+            color: rgb(255, 212, 0)!important;
+        }
+        
+        /*contenedor general*/
+        .context-menu-list {
+            min-width: 250px !important;
+            border-radius: 0 !important;
+           
+        }
+        
+        
+        /*contenedor div*/
+        .context-menu-list  li
+        {
+            padding-top: 10px !important;
+            padding-left: 15px !important;
+        }
+        
+        .context-menu-list  li span
+        {
+            padding-left: 25px;
+            font-family: 'Verdana', sans-serif;
+            font-weight: normal;
+            font-size: 13px;
+            color: #000;
+        }
+        
+         .context-menu-list  li:hover
+        {
+            background-color: #efefef !important;
+            color: #FFF;
+        }
+        
+        /*item normal*/
+        .item {
+            height: 30px !important;
+            padding-left: 20px;
+        }
+        /*separador*/
+        .context-menu-separator ul li {
+            height: 2px !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        
+        .context-menu-separator {
+            padding: 0 !important;
+            height: 0px !important;
+            border-bottom: 1px solid #e6e6e6 !important;
+        }
+
+        .context-menu-item {
+           padding-left: 10px !important;
+           vertical-align: middle !important;
+        }
+        
+        /*iconos*/
+        .context-menu-list [class^="icon-"], [class*=" icon-"]
+        {
+            display: block !important;
+            background: none !important;
+            background-image: none !important;
+            text-indent: 0 !important;
+            padding: .2em 0 0 .2em !important;
+            font-size: 110% !important;
+            text-align: left !important;
+        }
+        
+        .context-menu-list  [class^="icon-"]:before, [class*=" icon-"]:before {
+            text-decoration: none !important;
+            display: inline-block !important;
+            speak: none !important;
+                font-size: 110% !important;
+        }

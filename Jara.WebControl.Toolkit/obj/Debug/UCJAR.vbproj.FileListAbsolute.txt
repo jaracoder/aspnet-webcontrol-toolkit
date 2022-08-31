@@ -1,0 +1,26 @@
+C:\Programacion\UCJAR\UCJAR\bin\Debug\UCJAR.dll
+C:\Programacion\UCJAR\UCJAR\bin\Debug\UCJAR.pdb
+C:\Programacion\UCJAR\UCJAR\bin\Debug\UCJAR.xml
+C:\Programacion\UCJAR\UCJAR\obj\Debug\UCJAR.Resources.resources
+C:\Programacion\UCJAR\UCJAR\obj\Debug\UCJAR.vbproj.GenerateResource.Cache
+C:\Programacion\UCJAR\UCJAR\obj\Debug\UCJAR.dll
+C:\Programacion\UCJAR\UCJAR\obj\Debug\UCJAR.xml
+C:\Programacion\UCJAR\UCJAR\obj\Debug\UCJAR.pdb
+C:\Development\Controles Personalizados\UCJAR\UCJAR\bin\Debug\UCJAR.dll
+C:\Development\Controles Personalizados\UCJAR\UCJAR\bin\Debug\UCJAR.pdb
+C:\Development\Controles Personalizados\UCJAR\UCJAR\bin\Debug\UCJAR.xml
+C:\Development\Controles Personalizados\UCJAR\UCJAR\obj\Debug\UCJAR.Resources.resources
+C:\Development\Controles Personalizados\UCJAR\UCJAR\obj\Debug\UCJAR.vbproj.GenerateResource.Cache
+C:\Development\Controles Personalizados\UCJAR\UCJAR\obj\Debug\UCJAR.dll
+C:\Development\Controles Personalizados\UCJAR\UCJAR\obj\Debug\UCJAR.xml
+C:\Development\Controles Personalizados\UCJAR\UCJAR\obj\Debug\UCJAR.pdb
+C:\git\UCJAR\UCJAR\UCJAR\bin\Debug\UCJAR.dll
+C:\git\UCJAR\UCJAR\UCJAR\bin\Debug\UCJAR.pdb
+C:\git\UCJAR\UCJAR\UCJAR\bin\Debug\UCJAR.xml
+C:\git\UCJAR\UCJAR\UCJAR\obj\Debug\UCJAR.vbproj.AssemblyReference.cache
+C:\git\UCJAR\UCJAR\UCJAR\obj\Debug\UCJAR.Resources.resources
+C:\git\UCJAR\UCJAR\UCJAR\obj\Debug\UCJAR.vbproj.GenerateResource.cache
+C:\git\UCJAR\UCJAR\UCJAR\obj\Debug\UCJAR.vbproj.CoreCompileInputs.cache
+C:\git\UCJAR\UCJAR\UCJAR\obj\Debug\UCJAR.dll
+C:\git\UCJAR\UCJAR\UCJAR\obj\Debug\UCJAR.xml
+C:\git\UCJAR\UCJAR\UCJAR\obj\Debug\UCJAR.pdb

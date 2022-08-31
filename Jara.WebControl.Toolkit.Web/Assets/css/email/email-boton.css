@@ -1,0 +1,13 @@
+.btn 
+{
+    display: inline-block;color: #fff !important;text-shadow: 0px -1px 0px rgba(0,0,0,0.25) !important;
+    background-image: -moz-linear-gradient(top,#62c462,#51a351);background-image: -webkit-gradient(linear,0 0,0 100%,from(#62c462),to(#51a351));
+    background-image: -webkit-linear-gradient(top,#62c462,#51a351);background-image: -o-linear-gradient(top,#62c462,#51a351);
+    background-image: linear-gradient(to bottom,#62c462,#51a351);background-repeat: repeat-x;border: 5px solid;
+    -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;box-shadow: none !important;-webkit-transition: all ease .15s;
+    -moz-transition: all ease .15s;-o-transition: all ease .15s;transition: all ease .15s;cursor: pointer;vertical-align: middle;margin: 0;
+    position: relative;padding: 11px 19px;line-height: 32px;font-size: 17.5px;border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462',endColorstr='#ff51a351',GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
