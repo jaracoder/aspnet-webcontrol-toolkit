@@ -11,6 +11,6 @@ Imports System.Web.UI
 <Assembly: AssemblyTrademark("")> 
 <Assembly: ComVisible(False)>
 <Assembly: Guid("3abd029e-fb4d-4781-9700-fc59bfac58df")>
-<Assembly: AssemblyVersion("1.0.0.5")>
-<Assembly: AssemblyFileVersion("1.0.0.5")>
+<Assembly: AssemblyVersion("1.0.0.6")>
+<Assembly: AssemblyFileVersion("1.0.0.6")>
 <Assembly: TagPrefix("UCJAR", "jar")> 

@@ -14,6 +14,17 @@
     <h2>Historial de versiones</h2>
     <br />
 
+    <b>Ver. 1.0.0.6 - 03/09/2022</b>
+    <hr />
+    <ul>
+        <li>Nuevo control ClientButton con la funcionalidad inicial de prevenir el doble clic.</li>
+        <li>Establece los iconos del toolbox utilizando los genéricos de Win. Forms.</li>
+        <li>Oculta controles MyHierarchicalDataBoundControl, CompositeDataBoundColumn, 
+            SimpleDataBoundColumn con ToolboxItem(False)</li>
+        <li>Cambia nombre de controles Register por RegisterView, QuickContacts 
+            por ContactsView y TextBoxData por Text.</li>
+    </ul>
+
     <b>Ver. 1.0.0.5 - 28/08/2022</b>
     <hr />
     <ul>

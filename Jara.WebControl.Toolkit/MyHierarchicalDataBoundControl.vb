@@ -1,18 +1,20 @@
 ﻿Imports System.ComponentModel
 Imports System.Security.Permissions
 Imports System.Web
+Imports System.Web.UI
 Imports System.Web.UI.Design.WebControls
 Imports System.Web.UI.WebControls
 
 
 
-<AspNetHostingPermission(SecurityAction.Demand, Level:=Web.AspNetHostingPermissionLevel.Minimal)>
-    <AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=Web.AspNetHostingPermissionLevel.Minimal)>
-    <Designer(GetType(MyHierarchicalDataBoundControlDesigner))>
-    Public Class MyHierarchicalDataBoundControl
-        Inherits HierarchicalDataBoundControl
+<AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
+AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
+Designer(GetType(MyHierarchicalDataBoundControlDesigner)),
+ToolboxItem(False)>
+Public Class MyHierarchicalDataBoundControl
+    Inherits HierarchicalDataBoundControl
 
-    End Class
+End Class
 
 Public Class MyHierarchicalDataBoundControlDesigner
     Inherits HierarchicalDataBoundControlDesigner

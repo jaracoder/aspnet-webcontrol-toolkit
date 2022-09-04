@@ -328,3 +328,23 @@ li.L5, li.L6, li.L7, li.L8 {
 hr {
     margin: 0 !important;
 }
+
+/*Toolbox panel*/
+.toolbox {
+    margin-left: 8px;
+}
+
+.toolbox-img {
+    width: 368px;
+    display: inline-block;
+    text-align: left;
+    float: left;
+}
+
+.toolbox-ul {
+    display: inline-block;
+}
+
+.toolbox-ul ul li {
+    padding: 2px 0;
+}

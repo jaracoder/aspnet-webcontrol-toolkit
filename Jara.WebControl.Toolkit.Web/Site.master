@@ -21,18 +21,21 @@
                 <div class="clear hideSkiplink">
                     <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                         <Items>
-                            <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Inicio" />
-                            <asp:MenuItem Text="Documentación">
-                                <asp:MenuItem NavigateUrl="~/CompositeDataBoundColumn.aspx" Text="CompositeDataBoundColumn" />
-                                <asp:MenuItem NavigateUrl="~/Grid.aspx" Text="Grid" />
-                               <%-- <asp:MenuItem NavigateUrl="~/HierarchicalDataBoundControl.aspx" Text="HierarchicalDataBoundControl" />--%>
-                                <asp:MenuItem NavigateUrl="~/Register.aspx" Text="Register" />
-                                <asp:MenuItem NavigateUrl="~/SimpleDataBoundColumn.aspx" Text="SimpleDataBoundColumn" />
-                                <asp:MenuItem NavigateUrl="~/TextBoxData.aspx" Text="TextBoxData" />
-                                <asp:MenuItem NavigateUrl="~/QuickContacts.aspx" Text="QuickContacts" />
+                            <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Inicio" ToolTip="Inicio" />
+                            <asp:MenuItem Text="Controles" ToolTip="Ver controles">
+                                <asp:MenuItem NavigateUrl="~/ClientButton.aspx" Text="ClientButton" ToolTip="Control: ClientButton" />
+                                <asp:MenuItem NavigateUrl="~/ContactsView.aspx" Text="ContactsView" ToolTip="Control: ContactsView" />
+                                <asp:MenuItem NavigateUrl="~/Grid.aspx" Text="Grid" ToolTip="Grid" />
+                                <asp:MenuItem NavigateUrl="~/RegisterView.aspx" Text="RegisterView" ToolTip="Control: RegisterView" />
+                                <asp:MenuItem NavigateUrl="~/Text.aspx" Text="Text" ToolTip="Control: Text" />
                             </asp:MenuItem>
-                            <asp:MenuItem NavigateUrl="//jaracoder.com/contacto" Text="Contacto" />
-                            <asp:MenuItem NavigateUrl="//www.linkedin.com/in/jaracoder/" Text="Acerca de" />
+                            <asp:MenuItem Text="Ejemplos" ToolTip="Ver ejemplos">
+                                <asp:MenuItem NavigateUrl="~/CompositeDataBoundColumn.aspx" Text="CompositeDataBoundColumn" ToolTip="Ejemplo: CompositeDataBoundColumn" />
+                                <asp:MenuItem NavigateUrl="~/HierarchicalDataBoundControl.aspx" Text="HierarchicalDataBoundControl" ToolTip="Ejemplo: HierarchicalDataBoundControl" />
+                                <asp:MenuItem NavigateUrl="~/SimpleDataBoundColumn.aspx" Text="SimpleDataBoundColumn" ToolTip="Ejemplo: SimpleDataBoundColumn" />
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="//jaracoder.com/contacto" Text="Contacto" ToolTip="Contacto" />
+                            <asp:MenuItem NavigateUrl="//www.linkedin.com/in/jaracoder/" Text="Acerca de" ToolTip="Acerca de" />
                         </Items>
                     </asp:Menu>
                 </div>
@@ -74,7 +77,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <![endif]-->
 
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
 

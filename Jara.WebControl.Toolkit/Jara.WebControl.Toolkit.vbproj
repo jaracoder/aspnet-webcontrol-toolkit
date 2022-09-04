@@ -73,19 +73,20 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientButton.vb" />
     <Compile Include="MyHierarchicalDataBoundControl.vb" />
     <Compile Include="CompositeDataBoundColumn.vb" />
-    <Compile Include="QuickContacts.vb" />
+    <Compile Include="ContactsView.vb" />
     <Compile Include="Grid.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Register.vb" />
+    <Compile Include="RegisterView.vb" />
     <Compile Include="SimpleDataBoundColumn.vb" />
     <Compile Include="SQL.vb" />
-    <Compile Include="TextBoxData.vb" />
+    <Compile Include="Text.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>

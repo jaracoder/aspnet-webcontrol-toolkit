@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Jara.WebControl.Toolkit.Web", "Jara.WebControl.Toolkit.Web\", "{E5B2FC73-B567-487B-8D01-A66F4DB85E3B}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{0db1fbca-a3c2-448f-ab74-2028aa3dac21}|WebControlToolkit.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_58944"
 		Debug.AspNetCompiler.PhysicalPath = "Jara.WebControl.Toolkit.Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58944\"

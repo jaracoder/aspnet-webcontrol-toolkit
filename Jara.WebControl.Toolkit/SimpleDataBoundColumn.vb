@@ -7,10 +7,9 @@ Imports System.Web.UI.WebControls
 
 
 
-<AspNetHostingPermission(SecurityAction.Demand,
-        Level:=Web.AspNetHostingPermissionLevel.Minimal),
-        AspNetHostingPermission(SecurityAction.InheritanceDemand,
-        Level:=Web.AspNetHostingPermissionLevel.Minimal)>
+<AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
+AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
+ToolboxItem(False)>
 Public Class SimpleDataBoundColumn
     Inherits DataBoundControl
 

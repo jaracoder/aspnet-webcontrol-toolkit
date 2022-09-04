@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.ComponentModel.Design
+Imports System.Drawing
 Imports System.Drawing.Design
 Imports System.Security.Permissions
 Imports System.Web
@@ -7,38 +8,36 @@ Imports System.Web.UI
 Imports System.Web.UI.WebControls
 
 
-<AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal)>
-<AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal)>
-<DefaultProperty("Columns")>
-    <ParseChildren(True, "Columns")>
-    <ToolboxData("<{0}:Grid runat=""server""> </{0}:Grid>")>
-    Public Class Grid
-        Inherits CompositeDataBoundControl
+<AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
+AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
+ToolboxData("<{0}:Grid runat=""server""> </{0}:Grid>"), ToolboxBitmap(GetType(GridView)),
+DefaultProperty("Columns"), ParseChildren(True, "Columns")>
+Public Class Grid
+    Inherits CompositeDataBoundControl
+    Private gridView As GridView
+    Private dropSearch As DropDownList
+    Private txtSearch As TextBox
+    Private btnSearch As Button
 
-        Private gridView As GridView
-        Private dropSearch As DropDownList
-        Private txtSearch As TextBox
-        Private btnSearch As Button
+    Private columnsList As ArrayList
 
-        Private columnsList As ArrayList
+    <Category("Data")>
+    <Description("Establece el listado de columnas vinculadas al control.")>
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
+    <Editor(GetType(ColumnCollectionEditor), GetType(UITypeEditor))>
+    <PersistenceMode(PersistenceMode.InnerDefaultProperty)>
+    Public Property Columns() As ArrayList
+        Get
+            If columnsList Is Nothing Then
+                columnsList = New ArrayList
+            End If
 
-        <Category(".NET Apolox")>
-        <Description("Lista de columnas del grid.")>
-        <DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
-        <Editor(GetType(ColumnCollectionEditor), GetType(UITypeEditor))>
-        <PersistenceMode(PersistenceMode.InnerDefaultProperty)>
-        Public Property Columns() As ArrayList
-            Get
-                If columnsList Is Nothing Then
-                    columnsList = New ArrayList
-                End If
-
-                Return columnsList
-            End Get
-            Set(value As ArrayList)
-                columnsList = value
-            End Set
-        End Property
+            Return columnsList
+        End Get
+        Set(value As ArrayList)
+            columnsList = value
+        End Set
+    End Property
 
     Protected Overrides Function CreateChildControls(dataSource As IEnumerable, dataBinding As Boolean) As Integer
         If dataSource Is Nothing Then
@@ -97,22 +96,20 @@ Imports System.Web.UI.WebControls
     End Function
 
     Protected Sub PageIndexChanged(sender As Object, e As EventArgs)
-            DirectCast(sender, GridView).SelectedIndex = -1
-        End Sub
+        DirectCast(sender, GridView).SelectedIndex = -1
+    End Sub
+    Protected Overrides Sub PerformSelect()
+        'Llama a DataBinding sino tiene un data source asociado.
+        If Not IsBoundUsingDataSourceID Then
+            OnDataBinding(EventArgs.Empty)
+        End If
 
-        Protected Overrides Sub PerformSelect()
-            'Llama a DataBinding sino tiene un data source asociado.
-            If Not IsBoundUsingDataSourceID Then
-                OnDataBinding(EventArgs.Empty)
-            End If
-
-            'El método GetData devuelve un objeto de tipo DataSourceView asociado con el data bound.
-            GetData().Select(CreateDataSourceSelectArguments(), AddressOf OnDataSourceViewSelectCallback)
-
-            RequiresDataBinding = False
-            MarkAsDataBound()
-            OnDataBound(EventArgs.Empty)
-        End Sub
+        'El método GetData devuelve un objeto de tipo DataSourceView asociado con el data bound.
+        GetData().Select(CreateDataSourceSelectArguments(), AddressOf OnDataSourceViewSelectCallback)
+        RequiresDataBinding = False
+        MarkAsDataBound()
+        OnDataBound(EventArgs.Empty)
+    End Sub
 
     Private Sub OnDataSourceViewSelectCallback(retrievedData As IEnumerable)
         'Llama a DataBinding si tiene un data source asociado.
@@ -128,13 +125,12 @@ Imports System.Web.UI.WebControls
     End Sub
 
     Public Overrides Sub DataBind()
-            MyBase.DataBind()
+        MyBase.DataBind()
 
-            Controls.Clear()
-            ClearChildViewState()
-            TrackViewState()
-        End Sub
-
+        Controls.Clear()
+        ClearChildViewState()
+        TrackViewState()
+    End Sub
     Protected Overrides Sub OnDataBinding(e As EventArgs)
         MyBase.OnDataBinding(e)
     End Sub
@@ -158,37 +154,35 @@ Imports System.Web.UI.WebControls
 
 End Class
 
-    Public Class ColumnCollectionEditor
-        Inherits CollectionEditor
+Public Class ColumnCollectionEditor
+    Inherits CollectionEditor
 
     Public Sub New(newType As Type)
         MyBase.New(newType)
     End Sub
 
     Protected Overrides Function CanSelectMultipleInstances() As Boolean
-            Return False
-        End Function
+        Return False
+    End Function
 
-        Protected Overrides Function CreateCollectionItemType() As Type
-            Return GetType(Column)
-        End Function
+    Protected Overrides Function CreateCollectionItemType() As Type
+        Return GetType(Column)
+    End Function
 
-        Protected Overrides Function CreateInstance(itemType As Type) As Object
-            Return MyBase.CreateInstance(itemType)
-        End Function
-    End Class
+    Protected Overrides Function CreateInstance(itemType As Type) As Object
+        Return MyBase.CreateInstance(itemType)
+    End Function
+End Class
+<TypeConverter(GetType(ExpandableObjectConverter))>
+Public Class Column
+    Inherits TableCell
 
-    <TypeConverter(GetType(ExpandableObjectConverter))>
-    Public Class Column
-        Inherits TableCell
-
-        Private _name As String
-        Private _value As String
-        Private _visible As Boolean
-
-        Public Sub New()
-            Me.New(String.Empty, String.Empty, True)
-        End Sub
+    Private _name As String
+    Private _value As String
+    Private _visible As Boolean
+    Public Sub New()
+        Me.New(String.Empty, String.Empty, True)
+    End Sub
 
     Public Sub New(name As String, value As String, visible As Boolean)
         _name = name
@@ -197,28 +191,27 @@ End Class
     End Sub
 
     <Category("Apariencia")>
-        <Description("El nombre visible de la columna.")>
-        <DefaultValue("")>
-        <NotifyParentPropertyAttribute(True)>
-        Public Property Name() As String
-            Get
-                Return _name
-            End Get
-            Set(value As String)
-                _name = value
-            End Set
-        End Property
-
-        <Category("Apariencia")>
-        <Description("El valor de la columna.")>
-        <DefaultValue("")>
-        <NotifyParentPropertyAttribute(True)>
-        Public Property Value() As String
-            Get
-                Return _value
-            End Get
-            Set(value As String)
-                _value = value
-            End Set
-        End Property
+    <Description("El nombre visible de la columna.")>
+    <DefaultValue("")>
+    <NotifyParentPropertyAttribute(True)>
+    Public Property Name() As String
+        Get
+            Return _name
+        End Get
+        Set(value As String)
+            _name = value
+        End Set
+    End Property
+    <Category("Apariencia")>
+    <Description("El valor de la columna.")>
+    <DefaultValue("")>
+    <NotifyParentPropertyAttribute(True)>
+    Public Property Value() As String
+        Get
+            Return _value
+        End Get
+        Set(value As String)
+            _value = value
+        End Set
+    End Property
 End Class

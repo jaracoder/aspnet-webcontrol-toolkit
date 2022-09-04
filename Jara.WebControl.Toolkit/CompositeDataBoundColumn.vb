@@ -5,10 +5,9 @@ Imports System.Web.UI
 Imports System.Web.UI.WebControls
 
 
-<AspNetHostingPermission(SecurityAction.Demand,
-        Level:=AspNetHostingPermissionLevel.Minimal),
-        AspNetHostingPermission(SecurityAction.InheritanceDemand,
-        Level:=AspNetHostingPermissionLevel.Minimal)>
+<AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
+AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
+ToolboxItem(False)>
 Public Class CompositeDataBoundColumn
     Inherits CompositeDataBoundControl
 

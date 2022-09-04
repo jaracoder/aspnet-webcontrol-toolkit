@@ -3,8 +3,8 @@
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <link rel='stylesheet' type='text/css' href="assets/css/vendor/bootstrap.min.css" />
-    <%--<link rel='stylesheet' type='text/css' href="assets/css/vendor/bootstrap-responsive.min.css" />--%>
 </asp:Content>
+
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
 
     <div>
@@ -29,16 +29,23 @@
     <br />
     <h4>Controles de la librería</h4>
     <hr />
-    <p>Actualmente se han desarrollado los siguientes controles:</p>
+    <p>La librería dispone de los siguientes controles:</p>
 
-    <ul>
-        <li><a href="CompositeDataBoundColumn.aspx">CompositeDataBound</a></li>
-        <li><a href="Grid.aspx">Grid</a></li>
-        <li><a href="Register.aspx">Register</a></li>
-        <li><a href="SimpleDataBoundColumn.aspx">SimpleDataBound</a></li>
-        <li><a href="TextBoxData.aspx">TextBoxData</a></li>
-        <li><a href="QuickContacts.aspx">QuickContacts</a></li>
-    </ul>
+    <div class="toolbox">
+        <div class="toolbox-img">
+            <img src="Assets/img/toolbox.jpg" alt="Controles toolbox" />
+        </div>
+        <div class="toolbox-ul">
+            <ul>
+                <li><a href="ClientButton.aspx">ClientButton</a></li>
+                <li><a href="ContactsView.aspx">ContactsView</a></li>
+                <li><a href="Grid.aspx">Grid</a></li>
+                <li><a href="RegisterView.aspx">RegisterView</a></li>
+                <li><a href="Text.aspx">Text</a></li>
+            </ul>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
 
     <br />
     <h4>Utilizar la librería</h4>
@@ -60,6 +67,16 @@
         &lt;add tagPrefix=&quot;wc&quot; namespace=&quot;Jara.WebControl.Toolkit&quot; assembly=&quot;WebControlToolkit&quot; /&gt;
     &lt;/controls&gt;
 &lt;/pages&gt;</pre>
+
+    <br />
+    <h4>Ejemplos</h4>
+    <hr />
+    <p>Los siguientes controles se han desarrollado a modo de ejemplo:</p>
+    <ul>
+        <li><a href="CompositeDataBoundColumn.aspx">CompositeDataBound</a></li>
+        <li><a href="HierarchicalDataBoundControl.aspx">HierarchicalDataBoundControl</a></li>
+        <li><a href="SimpleDataBoundColumn.aspx">SimpleDataBound</a></li>
+    </ul>
 
     <br />
     <h4>Documentación</h4>
