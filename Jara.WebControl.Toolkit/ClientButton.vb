@@ -7,7 +7,7 @@ Imports System.Web.UI.WebControls
 
 <AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
  AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
- ToolboxBitmap(GetType(Button)),
+ ToolboxData("<{0}:ClientButton runat='server'></{0}:ClientButton>"), ToolboxBitmap(GetType(Button)),
  DefaultEvent("Click"), DefaultProperty("Text")>
 Public Class ClientButton
     Inherits WebControls.WebControl

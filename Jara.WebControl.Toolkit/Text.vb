@@ -8,7 +8,7 @@ Imports System.Web.UI.WebControls
 
 <AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
 AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
-ToolboxBitmap(GetType(TextBox)),
+ToolboxData("<{0}:Text runat='server'></{0}:Text>"), ToolboxBitmap(GetType(TextBox)),
 DefaultEvent("TextChanged"), DefaultProperty("Text")>
 Public Class Text
     Inherits TextBox

@@ -9,7 +9,7 @@ Imports System.Web.UI.WebControls
 <AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
 AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
 DefaultEvent("Submit"), DefaultProperty("ButtonText"),
-ToolboxBitmap(GetType(View))>
+ToolboxData("<{0}:RegisterView runat=server></{0}:RegisterView>"), ToolboxBitmap(GetType(View))>
 Public Class RegisterView
     Inherits CompositeControl
 

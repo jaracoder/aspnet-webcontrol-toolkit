@@ -12,7 +12,7 @@ Imports System.Web.UI.WebControls
 AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
 DefaultEvent("DataBinding"), DefaultProperty("Contacts"),
 ParseChildren(True, "Contacts"), 'ParseChildren = habilita el análisis de los elementos de la colección (que sean Contacts)
-ToolboxBitmap(GetType(View))>
+ToolboxData("<{0}:ContactsView runat='server'></{0}:ContactsView>"), ToolboxBitmap(GetType(View))>
 Public Class ContactsView
     Inherits WebControls.WebControl
 

@@ -10,7 +10,7 @@ Imports System.Web.UI.WebControls
 
 <AspNetHostingPermission(SecurityAction.Demand, Level:=AspNetHostingPermissionLevel.Minimal),
 AspNetHostingPermission(SecurityAction.InheritanceDemand, Level:=AspNetHostingPermissionLevel.Minimal),
-ToolboxData("<{0}:Grid runat=""server""> </{0}:Grid>"), ToolboxBitmap(GetType(GridView)),
+ToolboxData("<{0}:Grid runat='server'></{0}:Grid>"), ToolboxBitmap(GetType(GridView)),
 DefaultProperty("Columns"), ParseChildren(True, "Columns")>
 Public Class Grid
     Inherits CompositeDataBoundControl

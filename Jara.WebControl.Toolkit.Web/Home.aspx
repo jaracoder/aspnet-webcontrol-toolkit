@@ -18,12 +18,8 @@
         de código abierto</b> para aplicaciones web compatibles con .NET Framework 4.8.
     </p>
     <p>
-        El objetivo del proyecto es disponer de una librería de controles con características y funcionalidades extendidas
+        El objetivo del proyecto es disponer de una <strong>librería de controles con características y funcionalidades extendidas</strong>
         a los controles que proporciona la plataforma .NET.
-    </p>
-    <p>
-        Se trabajará como un proyecto personal implementando nuevos controles y mejorando las características de los ya existentes, a medida que se vayan
-        desarrollando nuevos controles de manera independiente en otras proyectos, también de ámbito personal, se irán incorporando en la librería.
     </p>
 
     <br />
